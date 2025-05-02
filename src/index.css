@@ -1,0 +1,18 @@
+:root {
+  font-family: "Fira Sans", Arial, NanumBarunGothic, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: dark;
+  color: theme("colors.neutral.50");
+  background-color: oklch(0.145 0 149.82);
+
+  font-smooth: never;
+  -webkit-font-smoothing: none;
+  font-synthesis: none;
+  text-rendering: optimizeSpeed;
+}
+
+a {
+  text-decoration: none;
+}

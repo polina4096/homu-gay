@@ -1,0 +1,35 @@
+{
+  "name": "homu-gay",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "packageManager": "pnpm@9.12.0+sha512.4abf725084d7bcbafbd728bfc7bee61f2f791f977fd87542b3579dcb23504d170d46337945e4c66485cd12d588a0c0e570ed9c477e7ccdd8507cf05f3f92eaca",
+  "license": "AGPL-3.0-only",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "preview": "vite preview",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.1.0",
+    "@solid-hooks/core": "^0.4.2",
+    "@unocss/eslint-config": "^65.4.3",
+    "@unocss/eslint-plugin": "^65.4.3",
+    "@unocss/preset-rem-to-px": "^65.4.3",
+    "@unocss/preset-uno": "^65.4.3",
+    "@unocss/reset": "^65.4.3",
+    "@unocss/transformer-compile-class": "^65.4.3",
+    "@unocss/transformer-directives": "^65.4.3",
+    "@unocss/transformer-variant-group": "^65.4.3",
+    "browserslist": "^4.24.4",
+    "eslint": "^9.19.0",
+    "lightningcss": "^1.29.1",
+    "solid-js": "^1.9.4",
+    "typescript": "~5.6.3",
+    "unocss": "^65.4.3",
+    "vite": "^6.0.11",
+    "vite-plugin-solid": "^2.11.0"
+  }
+}
