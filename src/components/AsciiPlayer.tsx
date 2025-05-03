@@ -1,4 +1,4 @@
-import { createEffect, createSignal, onMount } from "solid-js";
+import { createEffect, createSignal, For, onMount } from "solid-js";
 
 export function AsciiPlayer(props: {
   animation: string[];
@@ -29,11 +29,17 @@ export function AsciiPlayer(props: {
       setFrame(props.animation.length - 1);
     }
 
-    const frameContent = props.animation[frame()];
-    player.innerHTML = frameContent;
+    const curr = frame();
+    const prev = curr - 1 < 0 ? props.animation.length - 1 : curr - 1;
+    player.children[prev].classList.add("hidden");
+    player.children[curr].classList.remove("hidden");
   });
 
   return (
-    <div ref={player} />
+    <div ref={player}>
+      <For each={props.animation}>
+        {frameContent => <div class="hidden" innerHTML={frameContent} />}
+      </For>
+    </div>
   );
 }
