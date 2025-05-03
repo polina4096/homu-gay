@@ -19,6 +19,12 @@ export default defineConfig({
     fontFamily: {
       ascii: "Saitamaar",
     },
+
+    breakpoints: {
+      xs: "480px",
+      sm: "640px",
+      md: "768px",
+    },
   },
   preflights: [
     {
