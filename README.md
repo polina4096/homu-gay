@@ -9,4 +9,4 @@ Built with [SolidJS](https://solidjs.com) & [UnoCSS](https://unocss.dev/), linte
 
 ## Licence
 
-Distributed under the GNU AGPLv3 license, except for the favicon ([`rust-logo-gear-only.svg`](public/rust-logo-gear-only.svg)), which is licensed under CC BY 4.0.
+Distributed under the GNU AGPLv3 license, except for the font ([`saitamaar.ttf`](public/saitamaar.ttf)), which is public domain.
