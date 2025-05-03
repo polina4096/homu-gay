@@ -24,7 +24,7 @@ export const frames = Object
       switch (e) {
         case "\n":
           if (!closed) {
-            state += "</a>";
+            state += "</span>";
           }
 
           state += "\n";
@@ -32,28 +32,28 @@ export const frames = Object
 
         case "M":
           if (!closed) {
-            state += "</a>";
+            state += "</span>";
           }
 
-          state += "<a data-madoka href='https://mado.gay'>";
+          state += "<span data-madoka onmousedown='window.location.href = \"https://mado.gay\"'>";
           closed = false;
           break;
         case "H":
           if (!closed) {
-            state += "</a>";
+            state += "</span>";
           }
 
-          state += "<a data-homura href='https://homu.gay'>";
+          state += "<span data-homura onmousedown='window.location.href = \"https://homu.gay\"'>";
           closed = false;
           break;
         case "R":
           closed = true;
-          state += "</a>";
+          state += "</span>";
           break;
         default:
           state += e;
       }
 
       return state;
-    }, "") + (!closed ? "</a>" : "");
+    }, "") + (!closed ? "</span>" : "");
   });
