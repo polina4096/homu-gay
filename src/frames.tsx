@@ -43,7 +43,7 @@ export const frames = Object
             state += "</a>";
           }
 
-          state += "<a data-homura href='https://homy.gay'>";
+          state += "<a data-homura href='https://homu.gay'>";
           closed = false;
           break;
         case "R":
