@@ -35,7 +35,7 @@ export const frames = Object
             state += "</span>";
           }
 
-          state += "<span data-madoka onmousedown='window.location.href = \"https://mado.gay\"'>";
+          state += "<span data-madoka onmousedown='window.lastLink = \"https://mado.gay\"' onmouseup='window.location.href = window.lastLink'>";
           closed = false;
           break;
         case "H":
@@ -43,7 +43,7 @@ export const frames = Object
             state += "</span>";
           }
 
-          state += "<span data-homura onmousedown='window.location.href = \"https://homu.gay\"'>";
+          state += "<span data-homura onmousedown='window.lastLink = \"https://std.mem.transmute.me\"' onmouseup='window.location.href = window.lastLink'>";
           closed = false;
           break;
         case "R":
