@@ -22,6 +22,10 @@ export default defineConfig({
     },
   },
   build: {
+    target: "esnext",
     cssMinify: "lightningcss",
+    modulePreload: {
+      polyfill: false,
+    },
   },
 });
